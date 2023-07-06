@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人介绍</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: background-color 0.3s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h2 {
+            color: #333333;
+            font-size: 20px;
+            margin-top: 30px;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #666666;
+            transition: color 0.3s ease;
+        }
+
+        .background-element {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://img1.baidu.com/it/u=2122261723,623933855&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.4;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .container:hover,
+        .container:focus {
+            background-color: #f9f9f9;
+        }
+
+        h1:hover,
+        h1:focus {
+            color: #555555;
+        }
+
+        h2:hover,
+        h2:focus {
+            color: #555555;
+        }
+
+        ul li:hover,
+        ul li:focus {
+            color: #999999;
+        }
+
+        .background-element:hover,
+        .background-element:focus {
+            opacity: 0.6;
+        }
+
+        .social-btns {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        .social-btns a {
+            display: inline-block;
+            margin-right: 50px;
+            width: 30px;
+            height: 30px;
+            animation: pulse 1s infinite;
+        }
+
+        a img {
+            border-radius: 50%;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="background-element"></div>
+<div class="container">
+    <h1>atght.top</h1>
+
+    <h2>联络信息</h2>
+    <ul>
+        <li>姓名：关浩天</li>
+        <li>联系电话：15708263597</li>
+        <li>邮箱：1968833036@qq.com</li>
+        <li>QQ：1968833036</li>
+    </ul>
+    <div class="social-btns">
+        <a href="https://blog.csdn.net/qq_39825705?type=blog" target="_blank"><img
+                src="http://video.atght.top/csdn.svg"
+                alt="CSDN" width="30" height="30"></a>
+        <a href="https://gitee.com/atthg" target="_blank"><img src="http://video.atght.top/gitee.svg" alt="Gitee"
+                                                               width="30" height="30"></a>
+        <a href="https://leetcode.cn/u/smyslenny-n/" target="_blank"><img src="http://video.atght.top/leetcode.svg"
+                                                                          alt="LeetCode" width="30" height="30"></a>
+    </div>
+</div>
+</body>
+</html>
